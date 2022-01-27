@@ -1,0 +1,190 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* variables */
+
+:root {
+    
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/pattern-background-mobile.svg) no-repeat;
+    background-size: 100% 60%;
+    background-color: var(--Pale-blue);
+    
+    
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    height: 550px;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.card-container--hero img {
+    width: 320px;
+    border-radius: 15px 15px 0 0;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 30px;
+    line-height: 2.2rem;
+    color: var(--Desaturated-blue);
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    height: 80px;
+    background-color: var(--Very-pale-blue);
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.plan span {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    background:url('../images/icon-music.svg') center/cover no-repeat;
+    margin: 15px 15px;
+
+}
+
+
+
+.plan--price {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    
+}
+
+.plan--price {
+    text-align: center;
+}
+
+
+.plan--price .plan--price-anual {
+    
+    color: var(--Dark-blue);
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.plan--price .plan--price-value {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.plan a {
+    display: inline-block;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--Bright-blue);
+
+}
+
+.plan a:hover {
+    color: #6666ff;
+}
+
+.payment-button {
+    width: 270px;
+    height: 50px;
+    background-color: var(--Bright-blue);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--Very-pale-blue);
+    border-radius: 10px;
+    border-style: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    box-shadow: 0px 20px 42px 10px rgba(114,128,167,0.72);
+
+}
+
+.payment-button:hover {
+    background-color: #6666ff;
+    cursor: pointer;
+}
+
+.cancel-button {
+    width: 270px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+    margin: 0 auto;
+    border-style: none;
+}
+
+.cancel-button:hover {
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
+.credits {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    
+}
+
+.credits a {
+    color: var(--Dark-blue);
+    text-decoration: none;
+}
+
+.credits a:hover {
+
+    color: #6666ff;
+    cursor: pointer;
+
+}
